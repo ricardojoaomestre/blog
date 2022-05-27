@@ -1,7 +1,7 @@
 {
   "Post": {
     "title": { "loremWords": { "minLength": 5, "maxLength": 15 } },
-    "body": { "loremParagraphs": { "minLength": 1, "maxLength": 20 } },
+    "body": { "loremParagraphs": { "minLength": 200, "maxLength": 500 } },
     "author": { "belongsTo": "User" },
     "createdAt": { "dateTime": {
       "min": "2010-01-01T00:00:00Z",
@@ -12,7 +12,7 @@
     }
   },
   "Comment": {
-    "body": { "loremParagraphs": { "minLength": 1, "maxLength": 3 } },
+    "body": { "loremParagraphs": { "minLength": 50, "maxLength": 150 } },
     "post": {
       "belongsTo": "Post"
     },
