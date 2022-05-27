@@ -2,7 +2,7 @@
   "Post": {
     "title": { "loremWords": { "minLength": 5, "maxLength": 15 } },
     "body": { "loremParagraphs": { "minLength": 200, "maxLength": 500 } },
-    "author": { "belongsTo": "User" },
+    "author": { "belongsTo": "Author" },
     "createdAt": { "dateTime": {
       "min": "2010-01-01T00:00:00Z",
       "max": "2022-12-31T23:59:59Z"
@@ -20,9 +20,9 @@
       "min": "2010-01-01T00:00:00Z",
       "max": "2022-12-31T23:59:59Z"
     } },
-    "author": { "belongsTo": "User" }
+    "author": { "belongsTo": "Author" }
   },
-  "User": {
+  "Author": {
     "firstName": { "string": {} },
     "lastName": { "string": {} },
     "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" },
