@@ -21,7 +21,7 @@ const Welcome = () => {
       >
         <Center>
           <VStack textAlign={{ base: 'center' }}>
-            <Heading as="h1">{`\{JSON\} Placeholder Blog`}</Heading>
+            <Heading as="h1">{`{JSON} Placeholder Blog`}</Heading>
             <Text mt={4}>A blog using JSON Placeholder API</Text>
             <Link to="/posts">
               <Button mt={8}>Check Posts</Button>

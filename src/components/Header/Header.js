@@ -24,7 +24,7 @@ const Header = ({ ...rest }) => {
         <Text
           fontSize="xl"
           fontWeight={'extrabold'}
-        >{`\{JSON\} Placeholder Blog`}</Text>
+        >{`{JSON} Placeholder Blog`}</Text>
       </Link>
       <GlobalLoader />
     </Flex>
