@@ -2,7 +2,7 @@
   "Post": {
     "title": { "loremWords": { "minLength": 5, "maxLength": 15 } },
     "body": { "loremParagraphs": { "minLength": 1, "maxLength": 20 } },
-    "author": { "belongsTo": "User" }
+    "author": { "belongsTo": "User" },
     "createdAt": { "dateTime": {
       "min": "2010-01-01T00:00:00Z",
       "max": "2022-12-31T23:59:59Z"
@@ -36,3 +36,4 @@
       "hasMany": "Comment"
     }
   }
+}
