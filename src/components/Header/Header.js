@@ -12,8 +12,8 @@ const Header = ({ ...rest }) => {
       w="100%"
       mb={8}
       p={{ base: 4, md: 8 }}
-      bg={'primary'}
-      color={'primary.100'}
+      bg={'chakra-body-bg'}
+      color={'chakra-body-text'}
       borderBottom="1px solid"
       borderColor={'gray.400'}
       position="fixed"
