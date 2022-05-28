@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { HiArrowSmLeft } from 'react-icons/hi';
 import Avatar from '../components/Avatar';
 import UserLink from '../components/UserLink';
+import Comments from './Comments';
 
 const Post = () => {
   const { postId } = useParams();
@@ -17,7 +18,7 @@ const Post = () => {
 
   return (
     <Box mb={8}>
-      <Link to="/posts">
+      <Link to={`/posts#post${postId}`}>
         <HStack spacing={2} mb={4}>
           <HiArrowSmLeft />
           <Text>Back to Posts</Text>
@@ -32,6 +33,8 @@ const Post = () => {
       <Text as="p" mt={4}>
         {body}
       </Text>
+      <Divider my={4} />
+      <Comments postId={postId} />
     </Box>
   );
 };

@@ -6,7 +6,7 @@ import UserLink from '../components/UserLink';
 const PostPreview = ({ id, title, body, user }) => {
   return (
     <Box mb={8}>
-      <Heading as="h2">
+      <Heading as="h2" id={`post${id}`}>
         <Link to={`/post/${id}`}>{title}</Link>
       </Heading>
       <Text as="p" mt={4} textAlign="justify">

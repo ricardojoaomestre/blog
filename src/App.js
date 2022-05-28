@@ -8,6 +8,7 @@ import Post from './modules/Post';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import Page from './components/Page';
+
 const queryClient = new QueryClient();
 
 const App = () => {

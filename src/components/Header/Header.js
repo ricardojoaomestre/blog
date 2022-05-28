@@ -1,7 +1,7 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, HStack, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import GlobalLoader from '../GlobalLoader';
-
+import ColorModeSwitcher from '../ColorModeSwitcher';
 const Header = ({ ...rest }) => {
   return (
     <Flex
@@ -12,7 +12,7 @@ const Header = ({ ...rest }) => {
       w="100%"
       mb={8}
       p={{ base: 4, md: 8 }}
-      bg={'white'}
+      bg={'primary'}
       color={'primary.100'}
       borderBottom="1px solid"
       borderColor={'gray.400'}
@@ -26,7 +26,10 @@ const Header = ({ ...rest }) => {
           fontWeight={'extrabold'}
         >{`{JSON} Placeholder Blog`}</Text>
       </Link>
-      <GlobalLoader />
+      <HStack>
+        <GlobalLoader />
+        <ColorModeSwitcher />
+      </HStack>
     </Flex>
   );
 };

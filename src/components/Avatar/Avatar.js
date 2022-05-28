@@ -10,8 +10,8 @@ const Avatar = ({ username, ...rest }) => {
     .join('');
 
   return (
-    <Circle size="50px" bg={'gray.800'} color={'white'} {...rest}>
-      <Text>{description}</Text>
+    <Circle size="50px" bg={'green.400'} {...rest}>
+      <Text color={'white'}>{description}</Text>
     </Circle>
   );
 };
