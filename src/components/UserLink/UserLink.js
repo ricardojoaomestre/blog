@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UserLink = ({ user, ...rest }) => {
   return (
-    <Link to={`/users/${user.id}`} {...rest}>
+    <Link to={`/user/${user.id}`} {...rest}>
       <Text>{user.name}</Text>
     </Link>
   );

@@ -5,6 +5,7 @@ import DefaultLayout from './layout';
 import Posts from './modules/Posts';
 import Welcome from './modules/Welcome';
 import Post from './modules/Post';
+import User from './modules/User';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import Page from './components/Page';
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/" element={<Page module={<Welcome />} />} />
             <Route path="/posts" element={<Page module={<Posts />} />} />
             <Route path="post/:postId" element={<Page module={<Post />} />} />
+            <Route path="user/:userId" element={<Page module={<User />} />} />
           </Routes>
         </DefaultLayout>
       </QueryClientProvider>
